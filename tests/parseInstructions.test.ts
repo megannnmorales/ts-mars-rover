@@ -10,4 +10,7 @@ describe("parseInstructions", () => {
       "Invalid instruction",
     );
   });
+  test("lowercase valid characters return error", () => {
+    expect(() => parseInstructions("lmr")).toThrow("Invalid instruction");
+  });
 });
