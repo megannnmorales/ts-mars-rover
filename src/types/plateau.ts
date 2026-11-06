@@ -1,4 +1,4 @@
-interface PlateauSize {
-  x: number;
-  y: number;
+export interface PlateauSize {
+  readonly x: number;
+  readonly y: number;
 }

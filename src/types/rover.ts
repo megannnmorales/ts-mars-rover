@@ -1,6 +1,6 @@
 import { CompassDirection } from "./commands";
 
-interface Position {
+interface RoverPosition {
   readonly x: number;
   readonly y: number;
   readonly facing: CompassDirection;
