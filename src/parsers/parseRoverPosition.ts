@@ -15,7 +15,7 @@ export function parseRoverPosition(rawRoverPosition: string): RoverPosition {
   }
 
   if (!validateRoverCoordinates(coordinatesList)) {
-    throw new Error("Invalid co-ordinates");
+    throw new Error("Invalid coordinates");
     throw new Error("Invalid coordinates");
   }
 
