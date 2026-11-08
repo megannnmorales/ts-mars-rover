@@ -1,8 +1,8 @@
 import { RoverPosition } from "../types/rover";
 import { CompassDirection } from "../types/commands";
 
-export function parseRoverposition(rawRoverposition: string): RoverPosition {
-  const roverPositionList = rawRoverposition.split(" ");
+export function parseRoverPosition(rawRoverPosition: string): RoverPosition {
+  const roverPositionList = rawRoverPosition.split(" ");
   const lastELementInList = roverPositionList[roverPositionList.length - 1];
   let directionValue = lastELementInList.toString();
   const coordinatesList = roverPositionList.slice(0, 2);

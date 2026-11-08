@@ -1,0 +1,7 @@
+import { expect, test, describe } from "vitest";
+import { parseRoverPosition } from "../src/parsers/parseRoverPosition";
+
+describe("parseInstructions", () => {
+  test("valid string returns list of all values", () => {
+    expect(parseRoverPosition("1 2 N")).toEqual({ x: 1, y: 2, facing: "N" });
+  });
